@@ -5,173 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/master.css" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Style Guide</title>
-    
+
 </head>
 
 <body>
-    <header class="header-top">
-        <nav>
-            <ul>
-                <li>Menu</li>
-            </ul>
-        </nav>
-    </header>
-    <div class="banner-top">
-        <h1>Style Guide</h1>
-        <ul class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li>Style Guide</li>
-        </ul>
-    </div>
-    <section>
-        <article class="colours">
-            <h2>Colours</h2>
-            <div class="color">
-                <div class="color--red"></div>
-                <p>c44860</p>
-            </div>
-            <div class="color">
-                <div class="color--green"></div>
-                <p>c44860</p>
-            </div>
-            <div class="color">
-                <div class="color--blue"></div>
-                <p>c44860</p>
-            </div>
-        </article>
-        <article class="text-colours">
-            <h2>Colours</h2>
-            <div class="text-color">
-                <div class="text-color--black"></div>
-                <p>333333</p>
-            </div>
-            <div class="text-color">
-                <div class="text-color--grey"></div>
-                <p>797470</p>
-            </div>
-        </article>
-        <article>
-            <h2>Button styles</h2>
+    <div class="wrapper">
+        <!-- Header Top -->
+        <div class="header-top">
+            <!-- Menu -->
+            <nav class="navbar" id="menu">
+                <div class="nav-left">
+                    <img src="assets/images/logo.png" width="70%" alt="Logo">
+                </div>
+                <div class="nav-center">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li> 
+                        <li><a href="#"><i class="fa fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Menu -->
+        </div>
+        <!-- End Header -->
 
-        </article>
-        <article>
-            <h2>Button sizes</h2>
-            <div class="button-size">
-                <button type="submit" class="add-to-cart add-lg">+ Add to cart</button>
-                <p>Height = 55px</p>
+
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Facts -->
+            <div class="row-fact">
+                <div class="col-fact dumbbells">
+                    <img src="assets/images/intro1.jpg" width="100%" alt="dumbbells">
+                    <div class="content-fact">
+                        <span>
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="70px" height="54px">
+                            <path fill-rule="evenodd"  fill="rgb(221, 47, 49)"
+                            d="M67.285,18.473 L63.072,18.473 L63.072,23.970 C63.072,25.730 61.648,27.156 59.895,27.156 C59.346,27.156 58.836,27.003 58.385,26.755 L58.385,28.301 C58.385,30.059 56.961,31.487 55.207,31.487 C53.452,31.487 52.030,30.059 52.030,28.301 L52.030,18.473 L50.890,18.473 L50.890,13.011 L52.030,13.011 L52.030,3.185 C52.030,1.425 53.452,-0.002 55.206,-0.002 C56.961,-0.002 58.382,1.425 58.382,3.185 L58.382,4.729 C58.833,4.482 59.344,4.328 59.894,4.328 C61.648,4.328 63.070,5.754 63.070,7.514 L63.070,13.011 L67.283,13.011 C68.787,13.011 70.006,14.235 70.006,15.742 C70.006,17.251 68.789,18.473 67.285,18.473 ZM48.242,27.268 C47.574,28.978 46.456,31.837 46.456,33.640 L46.456,34.713 C46.456,37.415 44.265,39.613 41.571,39.613 L31.953,39.613 C29.258,39.613 27.067,37.757 27.067,35.478 C27.067,34.143 26.162,31.742 25.129,30.339 L22.155,26.298 C20.593,24.178 20.784,21.017 22.591,19.103 L26.508,14.949 L26.508,4.997 C26.508,3.644 27.602,2.546 28.951,2.546 C30.299,2.546 31.393,3.643 31.393,4.997 L31.393,10.107 C31.396,10.105 31.399,10.105 31.402,10.104 C31.557,10.013 31.717,9.940 31.888,9.885 L31.888,6.534 C31.888,5.182 32.983,4.084 34.331,4.084 C35.679,4.084 36.774,5.182 36.774,6.534 L36.774,9.751 L37.196,9.751 L37.196,6.534 C37.196,5.182 38.290,4.084 39.639,4.084 C40.988,4.084 42.081,5.182 42.081,6.534 L42.081,10.218 C42.696,10.663 43.099,11.384 43.099,12.201 C43.099,13.553 42.004,14.651 40.656,14.651 L35.060,14.651 C34.386,14.651 33.504,15.084 33.091,15.620 L29.926,19.721 C31.000,21.629 32.901,23.099 34.499,24.070 C34.518,24.080 34.535,24.091 34.552,24.100 C34.404,23.924 34.251,23.749 34.097,23.577 C33.063,22.423 32.595,20.917 32.847,19.549 C33.060,18.401 33.757,17.469 34.813,16.928 C36.693,15.965 38.686,15.514 40.693,15.571 C41.722,15.601 42.674,15.794 43.557,16.118 L43.557,9.368 C43.557,8.015 44.652,6.917 45.999,6.917 C47.347,6.917 48.442,8.015 48.442,9.368 L48.442,21.388 C48.442,21.459 48.428,21.524 48.421,21.594 C48.792,22.717 48.974,23.854 48.867,24.798 C48.776,25.604 48.566,26.437 48.242,27.268 ZM17.166,18.473 L17.166,28.301 C17.166,30.059 15.743,31.487 13.990,31.487 C12.235,31.487 10.812,30.059 10.812,28.301 L10.812,26.756 C10.362,27.003 9.854,27.156 9.303,27.156 C7.549,27.156 6.126,25.730 6.126,23.970 L6.126,18.473 L2.715,18.473 C1.210,18.473 -0.008,17.251 -0.008,15.742 C-0.008,14.235 1.211,13.011 2.715,13.011 L6.126,13.011 L6.126,7.514 C6.126,5.754 7.549,4.328 9.303,4.328 C9.854,4.328 10.362,4.481 10.812,4.728 L10.812,3.185 C10.812,1.425 12.235,-0.002 13.990,-0.002 C15.743,-0.002 17.166,1.425 17.166,3.185 L17.166,13.011 L24.071,13.011 L24.071,15.039 L20.833,18.473 L17.166,18.473 ZM29.051,41.751 L43.402,41.751 C45.426,41.751 47.066,43.396 47.066,45.426 L47.066,50.327 C47.066,52.356 45.426,54.002 43.402,54.002 L29.051,54.002 C27.027,54.002 25.387,52.356 25.387,50.327 L25.387,45.426 C25.387,43.396 27.027,41.751 29.051,41.751 Z"/>
+                            </svg>
+                        </span>
+                        <h3>Dumbbells</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sequi dolor accusamus.</p>
+                    </div>
+                </div>
+                <div class="col-fact strength">
+                    <div class="content-fact">
+                        <span>
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="70px" height="54px">
+                            <path fill-rule="evenodd"  fill="rgb(221, 47, 49)"
+                            d="M67.285,18.473 L63.072,18.473 L63.072,23.970 C63.072,25.730 61.648,27.156 59.895,27.156 C59.346,27.156 58.836,27.003 58.385,26.755 L58.385,28.301 C58.385,30.059 56.961,31.487 55.207,31.487 C53.452,31.487 52.030,30.059 52.030,28.301 L52.030,18.473 L50.890,18.473 L50.890,13.011 L52.030,13.011 L52.030,3.185 C52.030,1.425 53.452,-0.002 55.206,-0.002 C56.961,-0.002 58.382,1.425 58.382,3.185 L58.382,4.729 C58.833,4.482 59.344,4.328 59.894,4.328 C61.648,4.328 63.070,5.754 63.070,7.514 L63.070,13.011 L67.283,13.011 C68.787,13.011 70.006,14.235 70.006,15.742 C70.006,17.251 68.789,18.473 67.285,18.473 ZM48.242,27.268 C47.574,28.978 46.456,31.837 46.456,33.640 L46.456,34.713 C46.456,37.415 44.265,39.613 41.571,39.613 L31.953,39.613 C29.258,39.613 27.067,37.757 27.067,35.478 C27.067,34.143 26.162,31.742 25.129,30.339 L22.155,26.298 C20.593,24.178 20.784,21.017 22.591,19.103 L26.508,14.949 L26.508,4.997 C26.508,3.644 27.602,2.546 28.951,2.546 C30.299,2.546 31.393,3.643 31.393,4.997 L31.393,10.107 C31.396,10.105 31.399,10.105 31.402,10.104 C31.557,10.013 31.717,9.940 31.888,9.885 L31.888,6.534 C31.888,5.182 32.983,4.084 34.331,4.084 C35.679,4.084 36.774,5.182 36.774,6.534 L36.774,9.751 L37.196,9.751 L37.196,6.534 C37.196,5.182 38.290,4.084 39.639,4.084 C40.988,4.084 42.081,5.182 42.081,6.534 L42.081,10.218 C42.696,10.663 43.099,11.384 43.099,12.201 C43.099,13.553 42.004,14.651 40.656,14.651 L35.060,14.651 C34.386,14.651 33.504,15.084 33.091,15.620 L29.926,19.721 C31.000,21.629 32.901,23.099 34.499,24.070 C34.518,24.080 34.535,24.091 34.552,24.100 C34.404,23.924 34.251,23.749 34.097,23.577 C33.063,22.423 32.595,20.917 32.847,19.549 C33.060,18.401 33.757,17.469 34.813,16.928 C36.693,15.965 38.686,15.514 40.693,15.571 C41.722,15.601 42.674,15.794 43.557,16.118 L43.557,9.368 C43.557,8.015 44.652,6.917 45.999,6.917 C47.347,6.917 48.442,8.015 48.442,9.368 L48.442,21.388 C48.442,21.459 48.428,21.524 48.421,21.594 C48.792,22.717 48.974,23.854 48.867,24.798 C48.776,25.604 48.566,26.437 48.242,27.268 ZM17.166,18.473 L17.166,28.301 C17.166,30.059 15.743,31.487 13.990,31.487 C12.235,31.487 10.812,30.059 10.812,28.301 L10.812,26.756 C10.362,27.003 9.854,27.156 9.303,27.156 C7.549,27.156 6.126,25.730 6.126,23.970 L6.126,18.473 L2.715,18.473 C1.210,18.473 -0.008,17.251 -0.008,15.742 C-0.008,14.235 1.211,13.011 2.715,13.011 L6.126,13.011 L6.126,7.514 C6.126,5.754 7.549,4.328 9.303,4.328 C9.854,4.328 10.362,4.481 10.812,4.728 L10.812,3.185 C10.812,1.425 12.235,-0.002 13.990,-0.002 C15.743,-0.002 17.166,1.425 17.166,3.185 L17.166,13.011 L24.071,13.011 L24.071,15.039 L20.833,18.473 L17.166,18.473 ZM29.051,41.751 L43.402,41.751 C45.426,41.751 47.066,43.396 47.066,45.426 L47.066,50.327 C47.066,52.356 45.426,54.002 43.402,54.002 L29.051,54.002 C27.027,54.002 25.387,52.356 25.387,50.327 L25.387,45.426 C25.387,43.396 27.027,41.751 29.051,41.751 Z"/>
+                            </svg>
+                        </span>
+                        <h3>Dumbbells</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sequi dolor accusamus.</p>
+                    </div>
+                    <img src="assets/images/intro2.jpg" width="100%" alt="strength">
+                </div>
+                <div class="col-fact power">
+                    <img src="assets/images/intro3.jpg" width="100%" alt="power">
+                    <div class="content-fact">
+                        <span>
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="70px" height="54px">
+                            <path fill-rule="evenodd"  fill="rgb(221, 47, 49)"
+                            d="M67.285,18.473 L63.072,18.473 L63.072,23.970 C63.072,25.730 61.648,27.156 59.895,27.156 C59.346,27.156 58.836,27.003 58.385,26.755 L58.385,28.301 C58.385,30.059 56.961,31.487 55.207,31.487 C53.452,31.487 52.030,30.059 52.030,28.301 L52.030,18.473 L50.890,18.473 L50.890,13.011 L52.030,13.011 L52.030,3.185 C52.030,1.425 53.452,-0.002 55.206,-0.002 C56.961,-0.002 58.382,1.425 58.382,3.185 L58.382,4.729 C58.833,4.482 59.344,4.328 59.894,4.328 C61.648,4.328 63.070,5.754 63.070,7.514 L63.070,13.011 L67.283,13.011 C68.787,13.011 70.006,14.235 70.006,15.742 C70.006,17.251 68.789,18.473 67.285,18.473 ZM48.242,27.268 C47.574,28.978 46.456,31.837 46.456,33.640 L46.456,34.713 C46.456,37.415 44.265,39.613 41.571,39.613 L31.953,39.613 C29.258,39.613 27.067,37.757 27.067,35.478 C27.067,34.143 26.162,31.742 25.129,30.339 L22.155,26.298 C20.593,24.178 20.784,21.017 22.591,19.103 L26.508,14.949 L26.508,4.997 C26.508,3.644 27.602,2.546 28.951,2.546 C30.299,2.546 31.393,3.643 31.393,4.997 L31.393,10.107 C31.396,10.105 31.399,10.105 31.402,10.104 C31.557,10.013 31.717,9.940 31.888,9.885 L31.888,6.534 C31.888,5.182 32.983,4.084 34.331,4.084 C35.679,4.084 36.774,5.182 36.774,6.534 L36.774,9.751 L37.196,9.751 L37.196,6.534 C37.196,5.182 38.290,4.084 39.639,4.084 C40.988,4.084 42.081,5.182 42.081,6.534 L42.081,10.218 C42.696,10.663 43.099,11.384 43.099,12.201 C43.099,13.553 42.004,14.651 40.656,14.651 L35.060,14.651 C34.386,14.651 33.504,15.084 33.091,15.620 L29.926,19.721 C31.000,21.629 32.901,23.099 34.499,24.070 C34.518,24.080 34.535,24.091 34.552,24.100 C34.404,23.924 34.251,23.749 34.097,23.577 C33.063,22.423 32.595,20.917 32.847,19.549 C33.060,18.401 33.757,17.469 34.813,16.928 C36.693,15.965 38.686,15.514 40.693,15.571 C41.722,15.601 42.674,15.794 43.557,16.118 L43.557,9.368 C43.557,8.015 44.652,6.917 45.999,6.917 C47.347,6.917 48.442,8.015 48.442,9.368 L48.442,21.388 C48.442,21.459 48.428,21.524 48.421,21.594 C48.792,22.717 48.974,23.854 48.867,24.798 C48.776,25.604 48.566,26.437 48.242,27.268 ZM17.166,18.473 L17.166,28.301 C17.166,30.059 15.743,31.487 13.990,31.487 C12.235,31.487 10.812,30.059 10.812,28.301 L10.812,26.756 C10.362,27.003 9.854,27.156 9.303,27.156 C7.549,27.156 6.126,25.730 6.126,23.970 L6.126,18.473 L2.715,18.473 C1.210,18.473 -0.008,17.251 -0.008,15.742 C-0.008,14.235 1.211,13.011 2.715,13.011 L6.126,13.011 L6.126,7.514 C6.126,5.754 7.549,4.328 9.303,4.328 C9.854,4.328 10.362,4.481 10.812,4.728 L10.812,3.185 C10.812,1.425 12.235,-0.002 13.990,-0.002 C15.743,-0.002 17.166,1.425 17.166,3.185 L17.166,13.011 L24.071,13.011 L24.071,15.039 L20.833,18.473 L17.166,18.473 ZM29.051,41.751 L43.402,41.751 C45.426,41.751 47.066,43.396 47.066,45.426 L47.066,50.327 C47.066,52.356 45.426,54.002 43.402,54.002 L29.051,54.002 C27.027,54.002 25.387,52.356 25.387,50.327 L25.387,45.426 C25.387,43.396 27.027,41.751 29.051,41.751 Z"/>
+                            </svg>
+                        </span>
+                        <h3>Dumbbells</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sequi dolor accusamus.</p>
+                    </div>
+                </div>
             </div>
-            <div class="button-size">
-                <button type="submit" class="add-to-cart add-md">+ Add to cart</button>
-                <p>Height = 40px</p>
+            <!-- End Facts -->
+
+            <!-- Breadcrumb -->
+            <div class="beadcrumb"></div>
+            <!-- End Breadcrumb -->
+            <div class="columns">
+                <!-- Left Sidebar -->
+                <aside class="left-sidebar"></aside>
+                <!-- End Left Sidebar -->
+
+                <!-- Content -->
+                <div class="content">
+                    <!-- Banner -->
+                    <div class="banner"></div>
+                    <!-- End Banner -->
+
+                    <!-- Top Selling -->
+                    <div class="top-selling"></div>
+                    <!-- End Top Selling -->
+
+                    <!-- News -->
+                    <div class="new"></div>
+                    <!-- End News -->
+
+                    <!-- Newsletter -->
+                    <div class="newsletter"></div>
+                    <!-- End Newsletter -->
+                </div>
+                <!-- End Content -->
+
+                <!-- Right Sidebar -->
+                <aside class="right-sidebar"></aside>
+                <!-- End Right Sidebar -->
             </div>
-            <div class="button-size">
-                <button type="submit" class="add-to-cart add-sm">+ Add to cart</button>
-                <p>Height = 32px</p>
-            </div>
-        </article>
-        <article>
-            <h2>List</h2>
-            <ul class="list">
-                <li>My account</li>
-                <li class="active">My cart</li>
-                <li>Login</li>
-                <li>Wishlist</li>
-                <li>Checkout</li>
-            </ul>
-            <ul class="list--dot">
-                <li>My account</li>
-                <li class="active">My cart</li>
-                <li>Login</li>
-                <li>Wishlist</li>
-                <li>Checkout</li>
-            </ul>
-            <ul class="list--number">
-                <li>My account</li>
-                <li class="active">My cart</li>
-                <li>Login</li>
-                <li>Wishlist</li>
-                <li>Checkout</li>
-            </ul>
-        </article>
-        <article>
-            <h2>Alerts</h2>
-            <ul class="list-alert">
-                <li>Success message</li>
-                <li>Notification text</li>
-                <li>Warning display</li>
-            </ul>
-        </article>
-    </section>
-    <aside>
-        <article>
-            <h2>Typography</h2>
-            <p>Domine Regular 15/26px</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Officia recusandae molestiae expedita sequi possimus explicabo,
-                nesciunt veritatis totam aut in ducimus culpa accusantium corrupti
-                odit incidunt</p>
-            <p>quisquam. Quaerat, possimus distinctio.</p>
-        </article>
-        <article>
-            <p>Text link</p>
-            <p>Text link hover</p>
-        </article>
-        <article class="text-size">
-            <p>H1 Raleway Font Semibold - 35px</p>
-            <p>H2 Raleway Font Semibold - 30px</p>
-            <p>H3 Raleway Font Semibold - 25px</p>
-            <p>H4 Raleway Font Semibold - 14px</p>
-            <p>H5 Raleway Font Semibold - 13px</p>
-        </article>
-        <article>
-            <h2>Forms</h2>
-            <form action="#">
-                <label for="TextField">Text Field</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="TextField">Text Field Dropdown</label><br>
-                <select id="cars" name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-                <label for="TextField">Text Field Focus</label><br>
-                <label for="TextField">Text Field Error</label><br>
-            </form>
-        </article>
-        <article>
-            <form action="">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> I have a car</label><br>
-            </form>
-        </article>
-        <article>
-            <h2>Paginations</h2>
-            <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a href="#">1</a>
-                <a class="active" href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">&raquo;</a>
-              </div>
-              <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a href="#">1</a>
-                <a class="active" href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">&raquo;</a>
-              </div>
-        </article>
-    </aside>
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Footer -->
+        <footer></footer>
+        <!-- End Footer -->
+    </div>
 </body>
 
 </html>
