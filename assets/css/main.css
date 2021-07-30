@@ -1,0 +1,349 @@
+.p {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 400;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+}
+a:hover {
+  color: #dd2f31;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-item {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  text-align: left;
+  margin-bottom: 47px;
+}
+.header {
+  height: 950px;
+  background-image: url('/assets/images/banner.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.nav {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.nav-inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-inner nav .nav-icon {
+  display: none;
+}
+.nav-inner nav .navbar .nav-item {
+  display: inline-block;
+  margin: 0 25px;
+}
+.nav-inner__right .navbar-right {
+  right: 0;
+}
+.nav-inner__right .navbar-right__link {
+  display: inline-block;
+  padding-left: 11px;
+  padding-right: 12px;
+}
+.nav-inner__right .navbar-right__link a {
+  color: #ffffff;
+}
+.nav-inner__right .navbar-right__link span {
+  color: #ffffff;
+}
+/* End Header */
+footer {
+  height: 720px;
+  background-color: #222;
+  text-align: center;
+}
+.footer-head {
+  height: 355px;
+  padding: 0 375px;
+}
+.footer-head-content {
+  padding: 100px 225px 50px 225px;
+  border-bottom: 1px solid #cccccc;
+}
+.footer-head-content > p {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.footer-head-content .social {
+  width: 215px;
+  text-align: center;
+  margin: auto;
+}
+.footer-head-content .social > ul {
+  justify-content: space-between;
+}
+.footer-head-content .social > ul > li > a {
+  font-size: 18px;
+  color: #777777;
+}
+.footer-menu-row {
+  height: 235px;
+  display: flex;
+  padding: 80px 375px 0px 375px;
+}
+.footer-menu-row .footer-menu-col {
+  flex: 25%;
+  text-align: left;
+}
+.footer-menu-col h3 {
+  color: #ffffff;
+}
+ul.menu-footer {
+  display: block;
+  padding: 0;
+  margin-top: 35px;
+}
+ul.menu-footer > li {
+  list-style-type: none;
+}
+ul.menu-footer > li > a {
+  color: #717171;
+  line-height: 30px;
+}
+.copy-right {
+  height: 50px;
+  background-color: #111;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.tab {
+  overflow: hidden;
+}
+.tabcontent {
+  display: none;
+  padding: 40px 0;
+  border-top: 1px solid #ccc;
+}
+/* Fact */
+.fact {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  transform: translateY(-80px);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.fact__item {
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.fact-description {
+  width: 290px;
+  height: 190px;
+  padding: 30px 50px;
+  text-align: center;
+}
+.fact-description p {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 400;
+}
+/* End Fact */
+/* Top selling */
+.tab {
+  overflow: hidden;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 16px;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 700;
+}
+.tab button:hover {
+  background-color: #ccc;
+}
+.tab button.active {
+  color: #dd2f31;
+  border-bottom: 1px solid #dd2f31;
+}
+.tabcontent {
+  display: none;
+  padding: 40px 0 0 0;
+  border-top: 1px solid #ccc;
+}
+.col-inner {
+  width: 270px;
+  height: 330px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.col-inner .item {
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 33px 30px;
+}
+.col-inner .item img {
+  top: 0;
+}
+.col-inner:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.overlay {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 54px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: black;
+  font-size: 16px;
+  text-align: left;
+}
+.overlay button {
+  border-style: solid;
+  border-width: 1px;
+  color: #777777;
+  border-color: #dddddd;
+  background-color: rgba(221, 47, 49, 0);
+  width: 34px;
+  height: 34px;
+  margin-top: 15px;
+  text-align: center;
+}
+.overlay button:hover {
+  background-color: #dd2f31;
+  width: 34px;
+  height: 34px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+.col-inner:hover .overlay {
+  opacity: 1;
+}
+p.item-name {
+  color: #000000;
+}
+p.item-price {
+  font-weight: 700;
+  color: #000000;
+}
+/* End Top Selling */
+/* Slideshow Feedback */
+.feedback-content {
+  text-align: center;
+}
+.feedback-content .title {
+  margin-bottom: 0;
+}
+.feedback-content .slider {
+  width: 770px;
+  margin: 0 auto;
+}
+.feedback-content .slider .item-feedback img {
+  margin-bottom: 25px;
+}
+.feedback-content .slider .item-feedback img p {
+  font-size: 18px;
+}
+p.content-feedback {
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+p.emotion-feedback {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* End SlideShow Feedback */
+/* Branding */
+.brand {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 100px;
+  margin-bottom: 40px;
+  border-top: 1px solid #cccccc;
+  padding-top: 40px;
+}
+.brand-item {
+  justify-self: center;
+}
+/* End Branding */
+@media screen and (max-width: 768px) {
+  .brand {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 375px) {
+  .brand {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=main.css.map */
