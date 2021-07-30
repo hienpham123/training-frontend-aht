@@ -1,20 +1,27 @@
 .header {
-    height               : 950px;
+    height               : 88vh;
     background-image     : url('/assets/images/banner.jpg');
     background-attachment: fixed;
     background-repeat    : no-repeat;
     margin               : auto;
+    background-size: cover;
+
 }
 .nav{
     background-color: rgba(0, 0, 0, 0.6);
     &-inner{
-        height: 100px;
+        height: auto;
+        padding: 20px 0;
         .flex();
-        nav{
-
+        &__left{
             .nav-icon{
+                font-size: 30px;
+                color: @background-color;
                 display: none;
             }
+        }
+        nav{
+
             .navbar{
                 .nav-item{ 
                     display: inline-block;

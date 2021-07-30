@@ -1,30 +1,27 @@
 /* Fact */
 
-.fact {
-    max-width            : 1170px;
-    width                : 100%;
-    margin               : auto;
+.fact-inner {
+    width: 100%;
+    background-color: @background-color;
     transform            : translateY(-80px);
-    background-color     : @background-color;
-    box-sizing           : border-box;
     box-shadow           : 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     display              : grid;
     grid-template-columns: repeat(3, 1fr);
-
     &__item {
+        background-color     : @background-color;
         width           : 100%;
         height          : 250px;
         background-color: @background-color;
         overflow        : hidden;
     }
-
     &-description {
-        width     : 290px;
+        width     : 100%;
         height    : 190px;
-        padding   : 30px 50px;
+        padding   : 30px 0;
         text-align: center;
         p {
-            .p()
+            .p();
+            padding: 0 50px;
         }
     }
 }
@@ -35,22 +32,19 @@
 /* Top selling */
 .tab {
     overflow: hidden;
-}
-
-.tab button {
-    background-color: inherit;
-    float           : left;
-    border          : none;
-    outline         : none;
-    cursor          : pointer;
-    padding         : 0px 16px;
-    transition      : 0.3s;
-    font-size       : 18px;
-    font-weight     : 700;
-}
-
-.tab button:hover {
-    background-color: #ccc;
+    &--links{
+        background-color: inherit;
+        float           : left;
+        border          : none;
+        outline         : none;
+        cursor          : pointer;
+        padding         : 0px 16px;
+        transition      : 0.3s;
+        font-weight     : 700;
+        &:hover{
+            background-color: #ccc;
+        }
+    }
 }
 
 .tab button.active {
@@ -64,9 +58,8 @@
     border-top: 1px solid #ccc;
 }
 
-
 .col-inner {
-    width          : 270px;
+    width          : 100%;
     height         : 330px;
     position       : relative;
     display        : flex;
@@ -74,16 +67,16 @@
     justify-content: left;
 
     .item {
-        position  : absolute;
-        bottom    : 0;
         text-align: left;
-        padding   : 33px 30px;
-
         img {
+            width: 100%;
+            height: 230px;
             top: 0;
         }
+        &-des{
+            padding: 0 30px;
+        }
     }
-
     &:hover {
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     }
@@ -143,16 +136,16 @@ p.item-price {
 
 .feedback-content {
     text-align   : center;
+    padding-top: 16px;
     .title{
-        margin-bottom: 0;
+        margin-bottom: 44px;
     }
     .slider {
         width : 770px;
         margin: 0 auto;
         .item-feedback {
             img {
-                margin-bottom: 25px;
-    
+                margin-bottom: 2px;
                 p {
                     font-size: @font-medium;
                 }
@@ -162,13 +155,13 @@ p.item-price {
 }
 
 p.content-feedback {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
     font-size    : @font-medium;
     font-weight  : 400;
 }
 
 p.emotion-feedback {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     font-size    : @font-medium;
     font-weight  : 400;
 }
@@ -180,10 +173,11 @@ p.emotion-feedback {
 .brand {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-top: 100px;
-    margin-bottom: 40px;
-    border-top: 1px solid rgb(204, 204, 204);
+    margin-top: 118px;
+    margin-bottom: 30px;
+    border-top: 1px solid #cccccc;
     padding-top: 40px;
+    align-items: center;
     &-item{
         justify-self: center;
     }
