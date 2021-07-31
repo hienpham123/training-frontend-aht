@@ -1,0 +1,41 @@
+.tab{
+    button{
+        background-color: inherit;
+        float           : left;
+        border          : none;
+        outline         : none;
+        cursor          : pointer;
+        padding         : 0px 16px;
+        transition      : 0.3s;
+        font-weight     : 700;
+        &:hover{
+            background-color: #ccc;
+        }
+        &.active{
+            color        : @main-color;
+            border-bottom: 1px solid @main-color;
+        }
+    }
+}
+
+.overlay{
+    button {
+        border-style    : solid;
+        border-width    : 1px;
+        color           : @p-color;
+        border-color    : rgb(221, 221, 221);
+        background-color: rgba(221, 47, 49, 0);
+        width           : 34px;
+        height          : 34px;
+        margin-top      : 15px;
+        text-align      : center;
+
+        &:hover {
+            background-color: @main-color;
+            width           : 34px;
+            height          : 34px;
+            color           : @background-color;
+            border-radius   : 3px;
+        }
+    }
+}
