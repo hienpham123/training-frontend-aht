@@ -1,3 +1,3 @@
 # training-frontend-aht
 De 4 
-Deploy: gymaxshop.netlify.app
+Deploy: https://gymaxshop.netlify.app/
