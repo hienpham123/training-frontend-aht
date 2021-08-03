@@ -1,10 +1,20 @@
 .header {
-    height               : 88vh;
+    height               : 950px;
     background-image     : url('/assets/images/banner.jpg');
     background-attachment: fixed;
     background-repeat    : no-repeat;
     margin               : auto;
-    background-size: cover;
+    background-position: right 20% top;
+    &-content{
+        &__inner{
+            width: 520px;
+            margin-top: 192px;
+            p{
+                color: @background-color;
+            }
+        }
+
+    }
 
 }
 

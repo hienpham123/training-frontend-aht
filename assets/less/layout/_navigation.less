@@ -2,9 +2,10 @@
     background-color: rgba(0, 0, 0, 0.6);
     &-inner{
         height: auto;
-        padding: 20px 0;
+        padding: 23px 0;
         .flex();
         &__left{
+            height: 54px;
             .nav-icon{
                 font-size: 30px;
                 color: @background-color;
@@ -16,7 +17,7 @@
             .navbar{
                 .nav-item{ 
                     display: inline-block;
-                    margin: 0 25px;
+                    margin: 0 25px 0 22px;
                 }
             }
         }
@@ -25,10 +26,13 @@
                 right: 0;
                 &__link{
                     display: inline-block;
-                    padding-left: 11px;
-                    padding-right: 12px;
+                    padding-left: 20px;
+
                     a{
                         color: @background-color;
+                        &:hover{
+                            color: @main-color;
+                        }
                     }
                     span{
                         color: @background-color;

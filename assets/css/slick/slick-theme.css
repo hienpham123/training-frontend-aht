@@ -121,11 +121,10 @@
 
 .slick-dots
 {
-    position: absolute;
-    bottom: -25px;
+    bottom: -10px;
     display: block;
     width: 100%;
-    padding: 0;
+    padding: 2px;
     margin: 0;
 
     list-style: none;
