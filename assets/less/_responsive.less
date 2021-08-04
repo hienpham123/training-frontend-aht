@@ -1,20 +1,38 @@
 @media screen and (max-width:1200px) {
-    .container{
-        width: 96%;
-    }
-
     .nav-inner{
         padding: 10px 0;
+        justify-content: space-between;
+        nav{
+            margin-left: 0;
+            .navbar{
+                .nav-item{
+                    &:nth-child(1), &:nth-child(2),&:nth-child(3),
+                    &:nth-child(4),&:nth-child(5),&:nth-child(6){
+                        padding: 0 5px;
+                    }
+                    
+                }
+            }
+        }
+        &__right{
+            .navbar-right{
+                margin-left: 0;
+            }
+        }
     }
-
     .fact-inner{
         &-description{
-            padding: 15px 0;
+            height: auto;
+            padding: auto;
+            &:nth-child(4){
+                padding: auto;
+            }
         }
         &__item {
+            height: auto;
             img {
                 width     : 100%;
-                height    : 250px;
+                height    : auto;
             }
         }
     }
@@ -22,39 +40,17 @@
 
 @media screen and (max-width:1024px) {
 
-    .header{
-        .nav{
-            &-inner{
-                &__left{
-                    height: auto;
-                    img{
-                        width: 70%;
-                    }
-                }
-                nav{
-                    a{
-                        font-size: 14px;
-                    }
-                }
-                &__right{
-                    .navbar-right{
-                        &__link {
-                            padding: 0 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+
     .nav-inner nav .navbar .nav-item{
-        margin: 0 5px
+        padding: 0 5px
     }
 
     .fact-inner {
+        grid-template-columns: repeat(2, 1fr);
         &-description {
-            padding   : 10px 0;
+            padding   : auto;
             &:nth-child(4){
-                padding: 10px;
+                padding: auto;
             }
             p {
                 padding: 0 20px;
@@ -66,14 +62,24 @@
         height: auto;
         text-align   : left;
         margin-bottom: 5px;
-        .item{
-            img{
-                width: 330px;
-                height: 280px;
+        .col-inner{
+            height: auto;
+            .item{
+                img{
+                    width: 330px;
+                    height: 280px;
+                }
             }
         }
-    }
 
+    }
+    .overlay {
+        right: 5%;
+        button, button:hover{
+            width: 50px;
+            height: 50px;
+        }
+    }
     .brand {
         grid-template-columns: repeat(3, 1fr);
         &-item{
@@ -86,27 +92,37 @@
 @media screen and (max-width:768px) {
     .header {
         background-position-x: 80%;
-
         .nav {
             &-inner {
-
                 &__left {
                     display       : flex;
                     align-items   : center;
                     .nav-icon {
                         display: block;
-                        margin-right: 5px;
+                        position: absolute;
+                        top: 12px;
+                        left: 20%;
                     }
                     img {
                         width: 60%;
                     }
                 }
-
                 height: 50px;
-
                 nav {
+
                     .navbar {
                         display: none;
+                        width: 100%;
+                        position: absolute;
+                        top: 70px;
+                        left: 0px;
+                        background-color: rgba(0, 0, 0, 0.9);
+                        .nav-item{
+                            display: block;
+                            height: 30px;
+                            padding: 15px;
+                            border-bottom: 1px solid @background-color;
+                        }
                     }
                 }
 
@@ -121,12 +137,15 @@
     }
 
     .col-item {
-        .item{
-            img{
-                width: 100%;
-                height: auto;
+        .col-inner{
+            .item{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
+
     }
 
     .brand {
@@ -185,7 +204,12 @@
     
         }
     }
-
+    .header .nav-inner .nav-icon{
+        left: 30%;
+    }
+    .header .nav-inner nav .navbar .nav-item {
+        height: 20px;
+    }
     .fact-inner {
         display: flex;
         transform            : translateY(-100px);
@@ -217,8 +241,17 @@
             padding: 0 5px;
         }
     }
-    .col-item .item img{
-        width: 100%;
+    .col-item {
+        .col-inner{
+            height: auto;
+            .item{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
     }
 
     footer{
@@ -233,6 +266,11 @@
         height: 500px;
         .nav{
             &-inner{
+                &__left{
+                    .nav-icon{
+                        left: 40%;
+                    }
+                }
                 &__right{
                     .navbar-right{
                         &__link {
@@ -294,30 +332,21 @@
                 }
 
                 &-des {
-                    padding: 0 10px;
+                    padding: 15px 30px;
 
                     p {
                         font-size: 16px;
                     }
                 }
             }
+        }
+    }
 
-            .overlay {
-                width     : 40px;
-                font-size : 12px;
-                text-align: center;
-
-                button {
-                    width     : 25px;
-                    height    : 25px;
-                    margin-top: 5px;
-
-                    &:hover {
-                        width : 25px;
-                        height: 25px;
-                    }
-                }
-            }
+    .overlay {
+        right: 5%;
+        button{
+            width: 50px;
+            height: 50px;
         }
     }
 
@@ -377,27 +406,15 @@
         }
     }
 
-    .col-footer {
-        .column(50%);
-        padding: 0 15px 5px 15px;
+    footer .col-footer {
+        .column(100%);
+        padding: 15px;
 
         h3 {
             margin: 5px 0;
         }
-
-        &-item {
-            li {
-                padding-bottom: 0px;
-
-                a {
-                    .p();
-
-                    i {
-                        margin-right: 5px
-                    }
-                }
-
-            }
+        li{
+            padding: 5px 0;
         }
     }
 
