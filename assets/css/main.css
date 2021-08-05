@@ -97,14 +97,20 @@ h3 {
   width: 25%;
   box-sizing: border-box;
   padding: 0 15px;
-  padding: 52px 15px 23px 15px;
+  padding: 52px 15px 32px 15px;
   text-align: left;
 }
 .col-footer h3 {
   color: #ffffff;
 }
 .col-footer-item li {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+.col-footer-item li.address,
+.col-footer-item li.account,
+.col-footer-item li.about,
+.col-footer-item li.user {
+  padding-top: 10px;
 }
 .col-footer-item li a {
   font-size: 14px;
@@ -158,11 +164,10 @@ footer .footer-head-content .social {
   margin: auto;
 }
 footer .footer-head-content .social ul {
-  justify-content: space-between;
   display: flex;
 }
 footer .footer-head-content .social ul li {
-  margin-right: 5px;
+  margin-right: 47px;
 }
 footer .footer-head-content .social ul li a {
   font-size: 18px;
@@ -262,6 +267,7 @@ footer .copy-right p {
   padding: 0px 18px;
   transition: 0.3s;
   font-weight: 700;
+  font-family: 'Poppins';
 }
 .tab button:hover {
   background-color: #ccc;
@@ -409,7 +415,7 @@ footer .copy-right p {
 .brand {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin-top: 100px;
+  margin-top: 88px;
   margin-bottom: 30px;
   border-top: 1px solid #cccccc;
   padding-top: 40px;

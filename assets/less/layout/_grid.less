@@ -22,14 +22,17 @@
 }
 .col-footer{
     .column(25%);
-    padding:52px 15px 23px 15px;
+    padding:52px 15px 32px 15px;
     text-align: left;
     h3{
         color: @background-color;
     }
     &-item{
-        li{
-            padding-bottom: 20px;
+        li{ 
+            padding-bottom: 15px;
+            &.address, &.account, &.about, &.user{
+                padding-top: 10px
+            }
             a{
                 .p();
                 i{
